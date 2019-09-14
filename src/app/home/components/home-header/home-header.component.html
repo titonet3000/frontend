@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light cls-nav-header">
+    <div class="navbar-brand">
+      <a [routerLink]="['/']">
+        <img src="assets/logoRepsol.png" alt="">
+      </a>
+      <b>/</b>
+      <span>Global</span>
+    </div>
+    <label class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      ES
+      <i class="fa fa-angle-down clsIcon"></i>
+    </label>
+  
+    <div class="collapse navbar-collapse  cls-div-menu_header" id="navbarSupportedContent">
+      <div class="cls-div-menu-idioma">
+        <div class="row align-items-center">
+          <div class="col-6 text-center cls-texto-idioma active">Español</div>
+          <div class="col-6 text-center cls-texto-idioma ">Inglés</div>
+        </div>
+      </div>
+      <ul class="navbar-nav cls-lista-menu-header">
+        <li class="nav-item header_menuOption">
+          <a class="nav-link active header_menuOption" href="#">Español
+            <i class="fa fa-angle-down clsIcon"></i>
+          </a>
+  
+        </li>
+        <li class="nav-item dropdown header_menuOption">
+          <a class="nav-link active" href="#" id="navbarDropdown11" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-globe clsIcon" aria-hidden="true"></i>
+            Seleccionar WebSite
+            <i class="fa fa-angle-down clsIcon"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item header_menuOption">
+          <a class="nav-link active">
+            <i class="fa fa-comments clsIcon" aria-hidden="true"></i>
+            Contáctanos
+  
+          </a>
+        </li>
+        <li class="nav-item header_menuOption">
+          <a class="nav-link active">
+            <i class="fa fa-user clsIcon" aria-hidden="true"></i>
+            Área Cliente
+          </a>
+        </li>
+        <li class="nav-item header_menuOption">
+          <a class="nav-link active" [routerLink]="['/login']">
+            <i class="fa fa-times-circle" aria-hidden="true"></i>
+          </a>
+        </li>
+  
+  
+      </ul>
+    </div>
+  </nav>

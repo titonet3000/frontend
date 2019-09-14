@@ -1,0 +1,43 @@
+@mixin formLogin($align, $width, $maxWidth, $padding, $margin) {
+
+    text-align: $align;
+    width: $width;
+    max-width: $maxWidth;
+    padding-top: $padding;
+    margin: $margin;
+    
+}
+
+
+@mixin position($pos) {
+
+    @if $pos{
+        position: absolute;
+    }
+    @else{
+        position: relative;
+    }
+    
+}
+
+@mixin textAlign($tipo) {
+
+    @if $tipo == 1{
+        text-align: left;
+    }
+    @else if $tipo == 2{
+        text-align: center;
+    }
+    @else {
+        text-align: right;
+    }
+
+    
+}
+
+@mixin background($color, $opacity) {
+
+    background-color: rgba($color, $opacity);
+    
+}
+

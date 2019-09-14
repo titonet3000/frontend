@@ -1,0 +1,31 @@
+//COLORES
+$blanco: #ffffff;
+$gris: #f5f5f5;
+$naranja: #fe8200;
+$azul: #4f84ca;
+$rojo: #d12e2e;
+$plomo: #dcd4d0;
+$marron: #947556;
+
+$fondo_principal: $gris;
+$color_principal: $naranja;
+$fondo_btn_disabled: $plomo;
+$border_btn_disabled: $marron;
+
+//MIN Y MAX
+$min:0;
+$max:100%;
+
+
+//ESTILO LOGIN
+$style_login: center!important, 100%, 330px, 5rem, auto; 
+$padding_formLogin: 10px;
+$marginTop_formLogin: 10px;
+$height_formLogin: auto;
+
+
+//ESTILO CARGANDO
+$opacity_cargando: 0.8;
+$top_imagen: 30%;
+$tam_imagen: 3rem;
+$zIndex: 1;

@@ -1,0 +1,80 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+.cls_div_footer{
+    background-color: #5c4e44;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cls-div-menu-footer{
+float: left;
+margin-top: 2.6em;
+}
+
+.cls-div-menu-footer ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+    margin-bottom: 11px;
+
+}
+.cls-div-menu-footer ul li{    
+    float: left;
+    padding: 0 .5em;
+}
+.cls-div-menu-footer ul li a{
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;    
+    text-decoration: none;
+    font-size: 0.8rem;  
+}
+
+.barra_menu_footer+.barra_menu_footer{
+    border-left: 1px solid #fff;
+}
+
+.cls-div-icon-footer{
+    float: left;
+    margin-top: 1.4rem;
+}
+.cls-div-icon-footer ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+    margin-bottom: 11px;
+
+}
+.cls-div-icon-footer ul li{    
+    float: left;
+    padding: 0 .5em;
+}
+.cls-div-icon-footer ul li a{   
+    display: block;
+    color: white;
+    text-align: center;    
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.cls-div-copyright-footer{
+    background-color: #6b5d54;
+    text-align: center;
+    color: #cbc4bc;
+}
+
+@media (max-width: 992px){
+    .cls-div-menu-footer{
+        float: none;         
+    }
+    
+    .barra_menu_footer+.barra_menu_footer{
+        border-left: 0px;
+    }
+}

@@ -1,0 +1,24 @@
+<form class="form-signin" name="form" (ngSubmit)="f.form.valid && acceso()" #f="ngForm" novalidate>
+    <img class="mb-4" src="assets/logoRepsol.png" alt="">
+    <div class="alert alert-danger" role="alert" style="display: none" [ngStyle]="{display: alerta? 'block':'none'}">
+      Usuario o contraseña incorrecto
+    </div>
+  
+    <input type="text" id="CODIGO_USUARIO" name="CODIGO_USUARIO" class="form-control" placeholder="Usuario"
+      [(ngModel)]="user.CODIGO_USUARIO" required>
+  
+    <input type="password" id="PASSWORD" name="PASSWORD" class="form-control" placeholder="Contraseña"
+      [(ngModel)]="user.PASSWORD" required>
+  
+    <div class="checkbox mb-3">
+      <label></label>
+    </div>
+    
+    <button type="submit"
+      [class]="f.form.valid ? 'btn btn-lg btn-primary btn-block':'btn btn-lg btn-primary_disabled btn-block'"
+      [disabled]="!f.form.valid">Entrar</button>
+    <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+  </form>
+
+  <app-loading [loading]="loading"></app-loading>
+  

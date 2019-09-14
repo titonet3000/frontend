@@ -1,0 +1,110 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+
+.cls-nav-header{
+
+    padding-left: 6rem; 
+    padding-right: 6rem;
+    background: -webkit-linear-gradient(top,#fff 1%,#e9e8e8 100%);
+    background: linear-gradient(to bottom,#fff 1%,#e9e8e8 100%);
+
+}
+.navbar-brand b {
+    opacity: 0.2;
+    font-weight: 400;
+    font-size: larger;  
+}
+
+.navbar-brand span {
+    font-family: 'TitilliumWeb-Bold', sans-serif;
+    padding-left: 0.5rem;  
+    font-size: 16px;   
+    color: #fe8200;
+    text-transform: uppercase;
+    
+  
+}
+.cls-div-menu_header{
+    justify-content: flex-end;
+}
+.nav-link{
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 14px;
+    padding: 0;   
+}
+.nav-item{
+    padding: 0 15px;
+}
+
+.header_menuOption+.header_menuOption {    
+    border-left: 1px solid #cbc4bc;
+}
+
+.clsIcon{ 
+  color: #f87e0c;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.cls-div-menu-idioma{
+    display: none;
+}
+
+.cls-texto-idioma {
+    font-family: 'TitilliumWeb-bold', sans-serif;
+    color: #fe8200;
+    // font-weight: 700;
+    text-decoration: none;
+    display: block;
+    border-left: 1px solid #fe8200
+}
+.cls-texto-idioma.active{
+    font-family: 'TitilliumWeb-bold', sans-serif;
+    color: #9c9081;
+    // font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+//media queries
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .cls-nav-header a img {
+        height: 45px;
+        width: 166px;
+    }
+    .nav-link{
+        font-size: 11px;
+    }   
+
+}
+
+@media (max-width: 992px){
+.cls-nav-header {
+    padding-left: 1rem; 
+    padding-right: 1rem;
+}
+.cls-nav-header a img {
+    height: 35px;
+    width: 130px;
+}
+.cls-nav-header span{
+    font-size: 15px;
+}
+.navbar-toggler{
+    border-color: transparent;
+    color: #f87e0c;
+    font-size: 13px;   
+}
+.cls-lista-menu-header{
+    display: none;
+}
+.cls-div-menu-idioma{
+    display: block;
+    height: 43px;
+    padding-top: 0.6rem;
+}
+
+
+
+}
